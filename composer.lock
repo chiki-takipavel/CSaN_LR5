@@ -1,0 +1,75 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "12d98e078a9b258969dc92bc754695ab",
+    "packages": [
+        {
+            "name": "elementaryframework/water-pipe",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ElementaryFramework/WaterPipe.git",
+                "reference": "433e6ea0e48812c9eeaf7d65153d3680d01ba125"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ElementaryFramework/WaterPipe/zipball/433e6ea0e48812c9eeaf7d65153d3680d01ba125",
+                "reference": "433e6ea0e48812c9eeaf7d65153d3680d01ba125",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^7.1.10"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ElementaryFramework\\WaterPipe\\": "src/WaterPipe/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Axel Nana",
+                    "email": "ax.lnana@outlook.com"
+                }
+            ],
+            "description": "URL routing framework and requests/responses handler for PHP",
+            "keywords": [
+                "api",
+                "delete",
+                "get",
+                "http",
+                "https",
+                "middleware",
+                "post",
+                "put",
+                "request",
+                "response",
+                "rest",
+                "rewriting",
+                "routing",
+                "url"
+            ],
+            "time": "2019-11-21T08:16:43+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
