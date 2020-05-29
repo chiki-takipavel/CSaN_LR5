@@ -80,8 +80,11 @@ $pipe->put(StorageUri, function (Request $req, Response $res) use ($path) {
         if (!file_exists($pathDir)) {
             mkdir($pathDir, DirectoryMode, true);
         }
-        file_put_contents($path, $putData);
-        $res->sendText('Successfully Uploaded.', ResponseStatus::OkCode);
+        if (file_put_contents($path, $putData)) {
+            $res->sendText('Successfully Uploaded.', ResponseStatus::OkCode);
+        } else {
+            $res->sendText(NotFoundMessage, ResponseStatus::NotFoundCode);
+        }
     } else {
         $res->sendText(BadRequestMessage, ResponseStatus::BadRequestCode);
     }
